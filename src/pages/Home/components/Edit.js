@@ -38,7 +38,7 @@ const Edit = ({ add, submitting_status }) => {
 
   return (
     <div>
-      <h1>備忘錄</h1>
+      <h1>備忘錄清單</h1>
       <p>記事: </p>
       <input type="text" value={note} onChange={note_change} />
       <p>日期</p>
