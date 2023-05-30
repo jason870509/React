@@ -2,10 +2,12 @@
   "name": "react-tutorial",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jason870509.github.io/React",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^5.0.0",
     "json-server": "^0.17.3",
     "prettier": "^2.8.8",
     "react": "^18.2.0",
@@ -21,7 +23,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prettier": "prettier -w src/",
-    "server": "json-server --watch db.json"
+    "server": "json-server --watch db.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
